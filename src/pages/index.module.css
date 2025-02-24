@@ -1,0 +1,134 @@
+/* Header Homepage */
+.header {
+  width: 100%;
+  height: 436px;
+  background-color: #F0F5FA;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overflow: hidden;
+}
+
+/* Komponen Kedua: Title */
+.title {
+  width: 611px;
+  height: 142px;
+  color: #1862E7;
+  font-family: "Heebo", sans-serif;
+  font-size: 48px; /* Menambahkan font size jika diperlukan */
+  font-weight: bolder; /* Atur sesuai kebutuhan */
+}
+
+/* Komponen Ketiga: Description */
+.desc {
+  width: 611px;
+  height: 64px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 200%;
+  color: #475067;
+}
+
+/* Komponen Keempat: Button */
+.button {
+  width: 223px;
+  height: 46px;
+  border-radius: 30px;
+  background-color: #1862E7;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #154db2; /* Efek hover */
+}
+
+/* Komponen Kelima: Banner */
+.banner {
+  width: 624px;
+  height: 352px;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 48px;
+  color: #1862E7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Mobile specific styles */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+  }
+
+  .header {
+    position: relative;
+    z-index: 2;
+    height: auto;
+  }
+
+  .title {
+    font-size: 23px;
+    height: auto;
+    width: auto;
+    order: 3;
+    align-items: stretch;
+    margin-top: 150px;
+  }
+
+  .desc {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 10px;
+    height: auto;
+    width: auto;
+    order: 4;
+    align-items: stretch;
+  }
+
+  .button {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-top: 20px;
+    order: 5;
+    align-items: center;
+  }
+
+  .header > .banner {
+    order: 1;
+  }
+  
+  .header > .title {
+    order: 2;
+  }
+  
+  .header > .desc {
+    order: 3;
+  }
+  
+  .header > .button {
+    order: 4;
+  }
+}

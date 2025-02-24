@@ -1,0 +1,78 @@
+.footer {
+  width: 100%;
+  background-color: #0c295f;
+  color: white;
+  padding: 15px 30px; /* Mengurangi padding agar lebih rapat */
+  overflow-x: hidden;
+  overflow-y: auto;
+  overflow: hidden;
+}
+
+.footerContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logoSection {
+  text-align: center;
+  margin-bottom: 0; /* Mengurangi jarak bawah */
+}
+
+.logoSection img {
+  height: 65px;
+  margin: 0; /* Menghilangkan margin */
+}
+
+.title {
+  font-size: 28px; /* Ukuran font lebih kecil */
+  font-weight: bold;
+  margin-top: 5px; /* Mengurangi margin atas */
+}
+
+.footerBottom {
+  margin-top: 15px; /* Mengurangi margin atas */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ffffff50;
+  padding-top: 30px; /* Mengurangi padding atas */
+  font-size: 12px; /* Ukuran font lebih kecil */
+}
+
+/* Media query untuk mobile */
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px 20px;
+  }
+
+  .footerContainer {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logoSection {
+    margin-bottom: 20px;
+  }
+
+  .logoSection img {
+    height: 40px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .footerBottom {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 10px;
+  }
+}
+

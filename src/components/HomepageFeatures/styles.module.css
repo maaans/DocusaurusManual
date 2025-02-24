@@ -1,0 +1,124 @@
+.featuresWrapper {
+  width: 1212px;
+  height: 635px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto; /* Menambahkan margin agar kontainer berada di tengah */
+  padding: 0 20px; /* Menambahkan padding kiri dan kanan */
+  overflow-x: hidden;
+  overflow-y: auto;
+  overflow: hidden;
+}
+
+.categoryTitle {
+  width: 1212px;
+  height: 39px;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #0C295F;
+  line-height: 39px;
+  margin-top: 0px;
+  margin-bottom: 40px; /* Jarak bawah untuk title */
+}
+
+.featureContainer {
+  width: 1212px;
+  height: 354px;
+  display: flex;
+  gap: 30px;
+}
+
+.featureCard {
+  width: 384px;
+  height: 354px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  border: 1px solid rgba(228, 231, 236, 1.0);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Perubahan untuk menyelaraskan isi dengan atas */
+  align-items:start;
+  padding: 16px;
+  margin-bottom: 80px;
+}
+
+.featureTitle {
+  margin-bottom: 16px; /* Jarak antara title dan gambar */
+  color: #06104b;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.featureDescription {
+  text-align: left;
+  color: #667085;
+  font-size: 14px;
+}
+
+.featureImage {
+  margin-top: 20px; /* Jarak atas untuk gambar */
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center; /* Membuat gambar rata tengah */
+  align-items: center;
+  width: 100%;
+}
+
+.featureImage img {
+  max-width: 80%; /* Menyesuaikan gambar agar tidak melebihi kontainer */
+  height: auto;
+}
+
+/* Media query untuk mobile */
+@media (max-width: 768px) {
+  .featuresWrapper {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .categoryTitle {
+    width: 100%;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .featureContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .featureCard {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 16px;
+  }
+
+  .featureTitle {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .featureDescription {
+    font-size: 12px;
+  }
+
+  .featureImage {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .featureImage img {
+    max-width: 80%;
+    height: auto;
+  }
+}
